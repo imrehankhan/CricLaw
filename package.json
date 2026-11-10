@@ -1,0 +1,8 @@
+{
+  "name": "criclaw",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A grounded conversational assistant for the Laws of Cricket",
+  "scripts": { "start": "node server.js" },
+  "engines": { "node": ">=18" }
+}

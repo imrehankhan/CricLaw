@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f5f1"><title>CRICLAW — Cricket rules, clearly</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar"><a class="brand" href="/"><span class="brand-mark"><span></span><span></span><span></span></span><span>CRIC<span>LAW</span></span></a><div class="top-meta"><span class="status-dot"></span><span id="mode-label">Grounded in the Laws</span><span class="top-divider"></span><span class="edition">MCC · 2017 CODE</span></div></header>
+    <main>
+      <section class="intro"><div class="eyebrow"><span class="eyebrow-line"></span> THE CRICKET LAW COMPANION</div><h1>Know the law.<br><em>Play with clarity.</em></h1><p class="intro-copy">Ask a cricket rules question. Get a clear answer grounded in the Laws of Cricket, with the relevant passage at hand.</p></section>
+      <section class="workspace" aria-label="Ask CRICLAW">
+        <div class="ask-card"><div class="ask-heading"><div><div class="section-kicker">YOUR QUESTION</div><div class="ask-hint">Describe a situation or ask about a specific law</div></div><span class="spark">✳</span></div>
+          <form id="ask-form"><textarea id="question" rows="3" maxlength="1000" placeholder="e.g. What happens if the ball hits the batter's helmet on the ground?" aria-label="Your cricket rules question"></textarea><div class="form-footer"><span class="privacy"><span class="lock">▣</span> Answers are grounded in the indexed source</span><button id="ask-button" type="submit">Ask CRICLAW <span>↗</span></button></div></form>
+        </div>
+        <div class="suggestions"><span class="suggest-label">TRY ASKING</span><button class="suggestion" data-question="How many players can field for one side?">Number of players <span>↗</span></button><button class="suggestion" data-question="What is the responsibility of captains?">Captain's responsibility <span>↗</span></button><button class="suggestion" data-question="When can an umpire be changed during a match?">Changing an umpire <span>↗</span></button></div>
+        <div id="result" class="result" hidden aria-live="polite"></div>
+      </section>
+      <section class="source-note"><div class="source-icon">§</div><div><strong>Built on the Laws of Cricket</strong><p>Answers cite the supplied MCC Laws excerpt. Format specific ICC Playing Conditions are not included in this dataset.</p></div><a href="/data/laws_of_cricket_2017_MCC.pdf" target="_blank" rel="noreferrer">Open source PDF <span>↗</span></a></section>
+      <footer><span>CRICLAW <i>·</i> An LLM-powered conversational assistant for cricket rules and regulations</span><span id="corpus-status">Loading indexed source…</span></footer>
+    </main>
+  </div>
+  <script src="/app.js"></script>
+</body>
+</html>
